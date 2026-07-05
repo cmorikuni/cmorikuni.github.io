@@ -1,0 +1,144 @@
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --muted: #666666;
+  --accent: #3b6fd4;
+  --border: #e2e2e2;
+  --card-bg: #f7f7f8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14161a;
+    --text: #f0f0f0;
+    --muted: #9a9a9a;
+    --accent: #7aa2f7;
+    --border: #2a2d33;
+    --card-bg: #1c1f24;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+  line-height: 1.7;
+}
+
+header.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0 16px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 32px;
+}
+
+header.site-header .brand {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1.05rem;
+}
+
+header.site-header nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 0.92rem;
+}
+
+header.site-header nav a:hover {
+  color: var(--accent);
+}
+
+h1 {
+  font-size: 1.7rem;
+  margin-bottom: 4px;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin-top: 36px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+h2:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-top: 24px;
+}
+
+p, li {
+  font-size: 0.97rem;
+  color: var(--text);
+}
+
+.updated, .muted {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+}
+
+.product-list li {
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+}
+
+.product-list li a {
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.02rem;
+}
+
+.product-list li p {
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+
+footer.site-footer {
+  margin-top: 64px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+footer.site-footer a {
+  color: var(--muted);
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 2px 8px;
+  margin-right: 6px;
+}

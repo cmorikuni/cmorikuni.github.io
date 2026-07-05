@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Local AI Setup — Tapirus Studio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Tapirus Studio</a>
+    <nav>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <h1>Local AI Setup</h1>
+  <p class="muted">A portable, offline-friendly Claude Code + local LLM dev environment.</p>
+  <p><span class="tag">Dev Tooling</span><span class="tag">Shell / Config</span></p>
+
+  <p>Local AI Setup is a collection of scripts and config files for running Claude Code alongside a local Ollama/LiteLLM model stack — useful for working offline, on-prem, or with self-hosted models instead of (or alongside) hosted APIs.</p>
+
+  <h2>What's Included</h2>
+  <ul>
+    <li><strong>zshrc-snippets.sh</strong> — shell setup for the environment.</li>
+    <li><strong>bin/oclaude</strong> — launcher that points Claude Code at a local model backend.</li>
+    <li><strong>litellm_config.yaml / custom_models.yaml</strong> — LiteLLM routing and model definitions.</li>
+    <li><strong>run-ai / patch-ai</strong> — an orchestrator loop: generate, test, fix, and escalate automatically.</li>
+    <li><strong>claude-bootstrap</strong> — symlinking helper for consistent config across machines.</li>
+    <li><strong>wt</strong> — a git worktree helper for parallel branches.</li>
+  </ul>
+
+  <h2>Source</h2>
+  <p><a href="https://github.com/cmorikuni/ai-setup-shared">View on GitHub</a></p>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Tapirus Studio &middot; <a href="mailto:cadenm@gmail.com">cadenm@gmail.com</a> &middot; <a href="support.html#ai-setup">Support</a> &middot; <a href="privacy.html#ai-setup">Privacy</a> &middot; <a href="index.html">Home</a></p>
+  </footer>
+</body>
+</html>
